@@ -4,8 +4,9 @@
   "description": "Projeto de testes automatizado Nightwatch",
   "main": "index.js",
   "scripts": {
+    "test:smoke":  ".\\node_modules\\.bin\\nightwatch.cmd --tag smoke",
     "test": ".\\node_modules\\.bin\\nightwatch.cmd",
-    "test:ci": "./node_modules/.bin/nightwatch --env=headless"
+    "test:ci": "./node_modules/.bin/nightwatch --tag smoke --env=headless"
   },
   "keywords": [
     "qaninja",

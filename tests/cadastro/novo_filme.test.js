@@ -4,6 +4,7 @@ import pg from '../../lib/db'
 let movieData = {}
 
 module.exports = {
+    '@tags': ['smoke'],
 
     before: function(browser){
 
