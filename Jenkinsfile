@@ -1,13 +1,14 @@
 pipeline {
    agent {
-       docker { image "rodrigoromanoreis/node-wd" 
+       docker { 
+                image "qaninja/node-wd" 
                 args "--network=skynet"
-       }
+            }
     }
     stages {
         stage('Build'){
             steps{
-                sh "npm install node"
+                sh "npm install"
             }
         }
         stage('Tests'){
