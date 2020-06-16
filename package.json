@@ -4,7 +4,7 @@
   "description": "Projeto de testes automatizado Nightwatch",
   "main": "index.js",
   "scripts": {
-    "test": ".\\node_modules\\.bin\\nightwatch.cmd"
+    "test": ".\\node_modules\\.bin\\nightwatch"
   },
   "keywords": [
     "qaninja",
