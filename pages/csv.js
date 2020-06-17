@@ -1,24 +1,24 @@
-const csv = require('csv-parser');
-const fs = require('fs');
+//const csv = require('csv-parser');
+//const fs = require('fs');
 
-fs.createReadStream('data.csv')
-    .pipe(csv())
-    .on('data', (row) => {
+//fs.createReadStream('data.csv')
+//    .pipe(csv())
+//    .on('data', (row) => {
         //console.log(row);
-    })
-    .on('end', () => {
+//    })
+//    .on('end', () => {
         //console.log('CSV file successfully processed');
-    });
+//    });
 
-export default {
-    consultaCSV: (csv) => {
-        fs.createReadStream(csv)
-            .pipe(csv())
-            .on('data', (row) => {
+//export default {
+//    consultaCSV: (csv) => {
+//        fs.createReadStream(csv)
+//            .pipe(csv())
+//            .on('data', (row) => {
                 //console.log(row);
-            })
-            .on('end', () => {
+//            })
+//            .on('end', () => {
              //   console.log('CSV file successfully processed');
-            });
-    }
-}
+ //           });
+//    }
+//}

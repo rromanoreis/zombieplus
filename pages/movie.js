@@ -33,23 +33,23 @@ var createAction = {
     }
 }
 
-const csv = require('csv-parser');
-const fs = require('fs');
-const results = [];
+//const csv = require('csv-parser');
+//const fs = require('fs');
+//const results = [];
 
-fs.createReadStream('Data.csv')
-    .pipe(csv({separator: ';'}))
-    .on('data', (row) => results.push(row))
+//fs.createReadStream('Data.csv')
+//    .pipe(csv({separator: ';'}))
+//    .on('data', (row) => results.push(row))
         //let test = {row}
         //console.log(test['FILME'])
 
-    .on('end', () => {
-        results.forEach(function(x,y){
-            console.log(x['FILME'])
-            console.log(y)
-        })
-    });
-
+//    .on('end', () => {
+//        results.forEach(function(x,y){
+//            console.log(x['FILME'])
+//            console.log(y)
+//        })
+//    });
+//
 
 module.exports = {
     commands:[createAction],
