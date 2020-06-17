@@ -43,6 +43,7 @@ RUN groupadd --gid 3434 qaninja \
 USER qaninja
 ENV PATH /home/qaninja/.local/bin:/home/qaninja/bin:${PATH}
 
+
 #
 # Install Java 11 LTS / OpenJDK 11
 #
@@ -109,6 +110,7 @@ ENV DISPLAY :99
 RUN printf '#!/bin/sh\nXvfb :99 -screen 0 1280x1024x24 &\nexec "$@"\n' > /tmp/entrypoint \
   && chmod +x /tmp/entrypoint \
         && sudo mv /tmp/entrypoint /docker-entrypoint.sh
+        
 
 # ensure that the build agent doesn't override the entrypoint
 LABEL io.qaninja.preserve-entrypoint=true
